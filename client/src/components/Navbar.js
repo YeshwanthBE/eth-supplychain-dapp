@@ -15,6 +15,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Link } from "react-router-dom";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import { colors } from "@material-ui/core";
 
 const drawerWidth = 240;
 
@@ -109,6 +110,7 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
           >
             <MenuIcon />
           </IconButton>
+          <Link to="/" style={{textDecoration : "none",color : "white"}}>
           <Typography
             variant="h6"
             noWrap
@@ -121,6 +123,7 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
             />
             &nbsp;SupplyChain-Dapp
           </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -188,10 +191,10 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
               borderTop: "1px solid #44a",
             }}
           >
-            By Team Akatsuki &nbsp;&nbsp;
+            By Team 17 &nbsp;&nbsp;
             <a
               style={{ textDecoration: "none" }}
-              href="https://github.com/rishav4101/eth-supplychain-dapp"
+              href="https://github.com/YeshwanthBE/eth-supplychain-dapp"
             >
               <GitHubIcon style={{ color: "#fff" }} />
             </a>
